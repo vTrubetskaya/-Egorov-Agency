@@ -1,0 +1,229 @@
+@media (max-width: 768px) { 
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .other_events {
+        position: relative;
+    }
+
+    .mainText {
+        font-size: 42px;
+    }
+
+    .vector1 img {
+        width: 238px;
+        height: 188px;    
+    }
+
+    .vector2 img {    
+        width: 113px;
+        height: 163px;
+    }
+
+    .enter_form {    
+        width: 400px;
+    }  
+
+    .check_event {
+        margin-bottom: 170px;
+    }
+
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion_container {
+        min-height: 360px;
+    }
+
+    .accordion_container-1 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/HawaiianParty.png') no-repeat;  
+        background-size: 100%;
+    }
+
+    .accordion_container-2 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/MafiaParty.png') no-repeat;    
+        background-size: 100%;
+        background-position: center;
+    } 
+    
+    .accordion_container-3 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Party.ClientCarePlans.png') no-repeat;          
+        background-position: center;
+    } 
+    
+    .accordion_container-4 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+        background-position: center;
+    } 
+    
+    .accordion_container-5 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+        background-position: center;
+    } 
+    
+    .accordion_container-6 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Network.png') no-repeat;    
+        background-position: center;
+    } 
+    
+    .accordion_container-7 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/SystemDesign.png') no-repeat;    
+        background-position: center;
+    } 
+    
+    .accordion_container-8 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Party.ClientCarePlans.png') no-repeat; 
+        background-position: center;   
+    } 
+
+    .item {
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .acc_Title {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);        
+        font-size: 20px;
+        font-weight: 400;        
+    } 
+
+    .item-number {
+        font-size: 20px;    
+        font-weight: 400;
+    }
+
+    .item-1 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%), url('/imgs/HawaiianParty.png') no-repeat;        
+        background-position: center;       
+    }   
+    .item-2 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/MafiaParty.png') no-repeat;  
+        background-position: center;   
+    }
+      
+    .item-3 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/Party.ClientCarePlans.png') no-repeat;  
+        background-position: center;   
+    }
+      
+    .item-4 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+        background-position: center;   
+    }
+    .item-5 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+        background-position: center;  
+    }
+    
+    .item-6 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/Network.png') no-repeat;  
+        background-position: center;  
+    }
+    
+    .item-7 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/SystemDesign.png') no-repeat;  
+        background-position: center;  
+    }
+    
+    .item-8 { 
+        background: linear-gradient(to right, #162c4eec 0%, #000000b3 100%),url('/imgs/Party.ClientCarePlans.png') no-repeat;
+        background-position: center;  
+    }
+    
+    
+} 
+
+@media (max-width: 360px) {
+
+    .mainText {
+        font-size: 36px;
+    }   
+
+    .extraText {
+        font-size: 16px;
+    }
+
+    .vector1 img {
+        width: 138px;
+        height: 88px;    
+    }
+
+    .vector2 img {    
+        width: 100px;
+        height: 163px;
+    }
+
+    .enter_form {    
+        width: 280px;
+        height: 45px;
+    }
+
+    .enter_form input::placeholder {
+        font-size: 12px;
+    }
+
+    .enter_formBtn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .timer {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .timer__itemText {
+        font-size: 10px;
+        width: 60px;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .other_eventsBtn {
+        font-size: 16px;
+    }    
+
+    .check_event {
+        margin-bottom: 20px;
+    }
+
+    .acc_Title {   
+        font-size: 14px;  
+    } 
+
+    .item-number {
+        font-size: 14px;    
+    }
+
+    .accordion_container h3 {
+        font-size: 18px;
+    }
+    
+    .accordion_container p {
+        font-size: 14px;
+    }
+
+    .more_info {
+        width: 156px;
+        height: 42px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .accordion_container-1 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/HawaiianParty.png') no-repeat;  
+        background-size: cover;
+        background-position: center;
+    }
+    
+}

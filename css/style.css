@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.app {
+    width: 100%;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.mainText {
+    color: #162C4E;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 104%;
+    text-align: center; 
+}
+
+.extraText {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;    
+    line-height: 150%;
+    text-align: center;
+    opacity: .8;
+}
+
+.vector1 img {
+    position: absolute;
+    top: 0;
+    width: 438px;
+    height: 388px;    
+    animation: vector1 2.5s ease-in-out;
+}
+
+@keyframes vector1 {
+    0% {transform: translateY(-100px) translateX(-120px);opacity:0};
+    100% {transform: translateY(0) translateY(0);opacity:1};
+}
+
+.vector2 img {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 213px;
+    height: 263px;
+    float: right;    
+    animation: vector2 2.5s ease-in-out;
+}
+
+@keyframes vector2 {
+    0% {transform: translateY(-100px) translateX(120px);opacity:0};
+    100% {transform: translateY(0) translateY(0);opacity:1};
+}
+
+.logo {
+    width: 190px;
+    height: 60px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    animation: logo .5s ease-in-out;
+}
+
+@keyframes logo {
+    0% {transform: translateY(-80px)};
+    100% {transform: translateY(0)};
+}
+
+.under_construction {
+    margin: 0 auto;
+    max-width: 838px;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 25px;    
+    animation: under_construction 1.5s ease-in-out;
+    padding: 0px 10px;
+}
+
+@keyframes under_construction {
+    0% {transform: translateY(-80px);opacity:0};
+    100% {transform: translateY(0);opacity:1};
+}
+
+.under_constructionTitle,
+.all_events {
+    opacity: .4;    
+    text-transform: uppercase;
+}
+
+.under_constructionDesc {
+    max-width: 423px;
+    height: 54px;
+}
+
+.timer {
+    margin: 40px auto;
+    max-width: 588px;
+    height: 129px;
+    animation: timer 2.5s ease-in-out;    
+    padding: 0px 10px;
+}
+
+@keyframes timer {
+    0% {transform: translateY(-80px);opacity:0};
+    100% {transform: translateY(0);opacity:1};
+}
+
+.timer__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.days::after,
+.hours::after,
+.minutes::after {
+    content: ':';
+}
+
+.timer__itemNumber {
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.timer__itemText {
+    color: #fff;
+    background: url('/imgs/VectorRed.png') no-repeat;
+    font-size: 16px;
+    text-align: center;
+    height: 54px;
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check_event {
+    margin: 0 auto;
+    width: 338px;
+    height: 99px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: check_event 3.5s ease-in-out;
+    padding: 0px 10px;
+}
+
+@keyframes check_event {
+    0% {transform: translateY(-80px);opacity:0};
+    100% {transform: translateY(0);opacity:1};
+}
+
+.check_eventBtn,
+.popupBtn {    
+    font-family: "Poppins", sans-serif;    
+    font-size: 18px;
+    font-weight: 400;    
+    line-height: 150%;
+    text-align: center;
+    background-color: #1D4169;
+    color: #fff;
+    height: 60px;
+    width: 240px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #162C4E;
+    height: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM */
+
+.enter_form {    
+    width: 440px;
+    height: 59px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.enter_form input {
+    border: none;
+    margin-left: 20px;
+    width: 65%;
+    height: 27px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.enter_form input::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;    
+    line-height: 150%;
+    text-align: center;
+    opacity: .6;
+}
+
+.enter_formBtn {
+    background-color: #DF2224;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: none;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other_events {
+    position: absolute;
+    right: 100px;
+}
+
+.other_eventsBtn {
+    font-family: "Poppins", sans-serif;    
+    font-size: 20px;  
+    line-height: 150%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.other_eventsBtn img {
+    transform: rotate(90deg);
+}
+
+/* POPUP */
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: fixed;
+    background-color: #162C4E;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.popup_content {
+    font-family: "Poppins", sans-serif;
+    width: 320px;
+    height: 370px;
+    border-radius: 2px;
+    background-color: #fff;
+    z-index: 1; 
+    text-align: center;
+}
+
+.popup_content_items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.popup_content_items h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.popup_content_items p {
+    font-size: 16px;
+}
+
+.popupBtnX {
+	width: 24px;
+	height: 24px;
+    border: none;
+    background: url('/imgs/BtnClose.png') no-repeat;
+    align-self: flex-end;
+}
+
+.popupBtn{    
+    width: 200px;
+    height: 59.68px;
+}
+
+.popupBtn::before{
+    content: 'Close';
+}
+
+/* PAGE 2*/
+
+.page2_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0px 100px 0px;
+}
+
+.all_events {
+    margin-bottom: 30px;
+}
+
+/* ACCORDION */
+
+.accordion{
+    width: 85%;
+    height: 682px;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+}
+
+.item{
+    flex: 1;
+    padding: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+}
+
+.acc_Title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.item-number {
+    color: #fff;
+    font-size: 40px;    
+    font-weight: 600;
+}
+
+.accordion_container{
+    border: 1px solid white;
+    font-size: 14px;
+    display: none;       
+    overflow: hidden;
+    min-width: 40%;
+    padding: 30px;
+}
+
+.accordion_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 364px;
+    height: 100%;
+    justify-content: end;
+}
+
+.number {
+    color: #fff;
+    opacity: .1;
+    font-size: 380px;
+    margin-left: -150px;    
+}
+
+.accordion_container h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.accordion_container p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.more_info {
+    width: 256px;
+    height: 62px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-left: 10px solid #fff;
+    color: #fff;
+    justify-self: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accordion_container-1 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/HawaiianParty.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/MafiaParty.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-3 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Party.ClientCarePlans.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-4 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-5 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-6 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Network.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-7 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/SystemDesign.png') no-repeat;    
+    background-size: cover;
+} 
+
+.accordion_container-8 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.899) 55%,  rgba(255, 255, 255, 0) 55%), url('/imgs/Party.ClientCarePlans.png') no-repeat;    
+    background-size: cover;
+} 
+
+.active{
+    display: block;
+}
+
+.item-1 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%), url('/imgs/HawaiianParty.png') no-repeat;      
+    background-size: cover;
+}
+  
+.item-2 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/MafiaParty.png') no-repeat;  
+    background-size: cover;
+}
+  
+.item-3 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/Party.ClientCarePlans.png') no-repeat;  
+    background-size: cover;
+}
+  
+.item-4 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+    background-size: cover;
+}
+  
+.item-5 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/PartyOnTheBeach.HomeSecurity.png') no-repeat;  
+    background-size: cover;
+}
+
+.item-6 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/Network.png') no-repeat;  
+    background-size: cover;
+}
+
+.item-7 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/SystemDesign.png') no-repeat;  
+    background-size: cover;
+}
+
+.item-8 { 
+    background: linear-gradient(to top, #162c4eec 0%, #000000b3 100%),url('/imgs/Party.ClientCarePlans.png') no-repeat;  
+    background-size: cover;
+}
+
+.bold{
+    background: #162C4E;
+}
+
